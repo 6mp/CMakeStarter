@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.21)
 
-Include(FetchContent)
+include(FetchContent)
 
 FetchContent_Declare(
         Catch2
@@ -10,6 +10,7 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(Catch2)
 
 add_executable(Tests ${TESTS})
+target_include_directories(Tests PRIVATE ../src)
 target_link_libraries(Tests PRIVATE Catch2::Catch2WithMain)
 
 list(APPEND CMAKE_MODULE_PATH ${catch2_SOURCE_DIR}/extras)

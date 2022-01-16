@@ -18,8 +18,6 @@ endif ()
 
 file(GLOB_RECURSE SOURCES
         src/*.hpp
-        src/*.h
-        src/*.c
         src/*.cpp)
 list(REMOVE_ITEM SOURCES "src/main.cpp")
 
