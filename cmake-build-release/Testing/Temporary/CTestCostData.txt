@@ -1,3 +1,0 @@
-Factorials 0 0
-Factorials are computed 1 0.00141676
----
