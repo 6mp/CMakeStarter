@@ -3,6 +3,7 @@
 //
 
 #include <cstdio>
+
 auto main() -> int {
-    std::printf("hello");
+    std::printf( "hello" );
 }
